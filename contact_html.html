@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ED-COM CONTACT PAGE</title>
+    <link rel="icon" href="images/r_logo_blue.png">
+	<link rel="stylesheet"  href="contact_css.css"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar1">
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+			</div>
+			<div id="navbar-options">
+                <a class="nav-opt" href="index.html">HOME</a>
+                <a class="nav-opt" href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a class="nav-opt" href="tutorial_home_html.html">TUTORIALS</a>
+                <a class="nav-opt" href="aboutus_html.html">ABOUT US</a>              
+                <a href="login_html.html" style="display: none;">
+					<button  id="buton" class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a href="http://localhost:3000/" target="_blank">
+					<button id="buton" class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+                <button id="click" onclick="visible()">
+                    <img id="clickable" src="icons/menu-icon.png"></img>
+                </button>
+            </div>
+            <div id="vis">
+              <div id="ham">
+                <a class="opt" href="index.html">HOME</a><br>
+                <a class="opt" href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a class="opt" href="tutorial_home_html.html">TUTORIALS</a>              
+                <a class="opt" href="aboutus_html.html">ABOUT US</a>
+                <a class="opt" href="login_html.html" style="display: none;">
+					<button  class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a class="opt" href="http://localhost:3000/" target="_blank"></a>
+					<button  class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+              </div>
+            </div>
+
+		</div>
+
+		<div id="mid">
+        <section class="ftco-section">
+            <div class="container" >
+            <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="wrapper">
+                <div class="row no-gutters">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                    <h3 class="mb-4">Write us</h3>
+                    <div id="form-message-warning" class="mb-4">
+                        Failed to send the message, Please try again after sometime!
+                    </div>
+                    <div id="form-message-success" class="mb-4">
+                        Your message was sent, thank you!
+                    </div>
+                    <form id="contactForm" name="contactForm" class="contactForm"  action="https://getform.io/f/4743cc91-4252-470b-a00e-8035b3279725" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        <div class="submitting"></div>
+                        </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                    <h3>Contact information</h3>
+                    <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                    <div class="dbox w-100 d-flex align-items-start">
+                    
+                    <div class="text pl-3">
+                        <p><span>Address:</span> <a href="#">Visakhapatnam, Andhra Pradesh, India.</a></p>
+                    </div>
+                    </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                
+                <div class="text pl-3">
+                    <p><span>Phone:</span> <a href="tel://1234567920">+XX XXXXX XXXXX</a></p>
+                </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                
+                <div class="text pl-3">
+                    <p><span>Email:</span> <a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSMTtfzgFwzRpvLTCGcMQdDKnJLrKQfPrqxKsrPwNpJQPnCCfHvwJltNGkKnvGCWjfTKkwJK" target="_blank"><span class="__cf_email__" data-cfemail="e28b8c848da29b8d9790918b9687cc818d8f"><a href="#">edcomofficial@email.com</a></span></a></p>
+                </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                <div class="text pl-3">
+                    <p><span>Website:</span> <a href="index.html">edcom.com</a></p>
+                
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        </div>
+		<div class="footer">
+			<div id="footor-main"> 
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+				<div id="social-icons">
+					<a href="https://www.facebook.com/100090803676433/" target="_blank"><img class="icons" src="icons/facebook-icon.svg"></a>
+					<a href="https://instagram.com/ed2comofficial?igshid=YmMyMTA2M2Y=" target="_blank"><img class="icons" src="icons/instagram-icon.svg"></a>
+					<a href="https://www.twitter.com/ed2comofficial" target="_blank"><img class="icons" src="icons/twitter-icon.svg"></a>
+					<a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSMTtfzgFwzRpvLTCGcMQdDKnJLrKQfPrqxKsrPwNpJQPnCCfHvwJltNGkKnvGCWjfTKkwJK" target="_blank"><img class="icons" src="icons/send-icon.png"></a>
+				</div>
+			</div>
+			<p>Educational Community & Competition System</p>
+			<p><a id="in-p" href="contact_html.html">Contact</a>|&nbsp&nbsp<a id="in-p" href="aboutus_html.html">About</a>|&nbsp&nbsp<a id="in-p" href="faqs_html.html">FAQs</a></p>
+		</div>
+	</div>
+
+
+  <script src="contact_js.js"></script>
+</body>
+</html>

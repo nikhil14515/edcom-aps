@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ED-COM COMMUNITY HOME PAGE</title>
+    <link rel="icon" href="images/r_logo_blue.png">
+	<link rel="stylesheet" href="tutorial_home_css.css"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar1">
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+			</div>
+			<div id="navbar-options">
+				<a class="nav-opt" href="index.html">HOME</a>
+				<a class="nav-opt" href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a class="nav-opt" href="aboutus_html.html">ABOUT US</a>
+				<a class="nav-opt" href="contact_html.html">CONTACT US</a>                
+                <a href="login_html.html" style="display: none;">
+					<button  id="buton" class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a href="http://localhost:3000/" target="_blank">
+					<button id="buton" class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+				<button id="click" onclick="visible()">
+        			<img id="clickable" src="icons/menu-icon.png"></img>
+        		</button>
+			</div>
+
+		</div>
+		<div class="bod">
+			<div id="vis">
+		      <div id="ham">
+				<a href="index.html">HOME</a><br>
+				<a class="opt" href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a href="aboutus_html.html">ABOUT US</a><br>
+				<a  href="contact_html.html">CONTACT US</a><br><br>                
+                <a class="opt" href="login_html.html" style="display: none;">
+					<button class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a class="opt" href="http://localhost:3000/" target="_blank">
+					<button  class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+		      </div>
+		    </div>
+
+            <div id="side-head">Checkout available tutorials here!</div>
+		</div>
+        <div id="middle">
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Python Programming Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_1.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-1" onclick="copy(1)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Java Programming Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_2.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn"  id="tut-btn-2" onclick="copy(2)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">C Programming Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_3.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-3" onclick="copy(3)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">HTML & CSS Course</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_4.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-4" onclick="copy(4)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">JavaScript Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_5.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-5" onclick="copy(5)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Data Structures Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_6.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-6" onclick="copy(6)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">SQL Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_7.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-7" onclick="copy(7)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">ReactJS Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_8.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-8" onclick="copy(8)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">NodeJS Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_9.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-9" onclick="copy(9)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">AngularJS Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_10.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-10" onclick="copy(10)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Django using Python</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_11.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-11" onclick="copy(11)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">ReactJS & Firebase Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_12.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-12" onclick="copy(12)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Machine Learning Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_13.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-13" onclick="copy(13)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Data Analysis Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_14.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-14" onclick="copy(14)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Data Science Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_15.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-15" onclick="copy(15)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">AWS Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_16.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-16" onclick="copy(16)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Microsoft AZURE Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_17.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-17" onclick="copy(17)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Google Cloud Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_18.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-18" onclick="copy(18)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">LINUX Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_19.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-19" onclick="copy(19)">Share</button>
+                </div>
+            </div>
+            <div class="tut-main">
+                <div class="tut-front">
+                    <h4 class="tut-name">Database Design Tutorial</h4>
+                </div>
+                <div class="tut-bot">
+                    <a href="tutorials/tut_ind_20.html">
+                        <button class="tut-btn">Watch</button>
+                    </a>
+                    <button class="tut-btn" id="tut-btn-20" onclick="copy(20)">Share</button>
+                </div>
+            </div>
+
+        </div>
+		<div class="footer">
+			<div id="footor-main"> 
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+				<div id="social-icons">
+					<a href="https://www.facebook.com/100090803676433/" target="_blank"><img class="icons" src="icons/facebook-icon.svg"></a>
+					<a href="https://instagram.com/ed2comofficial?igshid=YmMyMTA2M2Y=" target="_blank"><img class="icons" src="icons/instagram-icon.svg"></a>
+					<a href="https://www.twitter.com/ed2comofficial" target="_blank"><img class="icons" src="icons/twitter-icon.svg"></a>
+					<a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSMTtfzgFwzRpvLTCGcMQdDKnJLrKQfPrqxKsrPwNpJQPnCCfHvwJltNGkKnvGCWjfTKkwJK" target="_blank"><img class="icons" src="icons/send-icon.png"></a>
+				</div>
+			</div>
+			<p>Educational Community & Competition System</p>
+			<p><a id="in-p" href="contact_html.html">Contact</a>|&nbsp&nbsp<a id="in-p" href="aboutus_html.html">About</a>|&nbsp&nbsp<a id="in-p" href="faqs_html.html">FAQs</a></p>
+		</div>
+	</div>
+	<script src="tutorial_home_js.js"></script>
+</body>
+</html>

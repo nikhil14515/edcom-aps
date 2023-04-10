@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ED-COM SIGN IN  PAGE</title>
+	<link rel="icon" href="images/r_logo_blue.png">
+	<link rel="stylesheet" href="signin_css.css"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar1">
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+			</div>
+			
+			<div id="navbar-options">
+				<a class="nav-opt" href="index.html">HOME</a>
+				<a class="nav-opt" href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a class="nav-opt" href="tutorial_home_html.html">TUTORIALS</a>
+				<a class="nav-opt" href="aboutus_html.html">ABOUT US</a>
+				<a class="nav-opt" href="contact_html.html">CONTACT US</a>                
+                <a href="login_html.html">
+					<button  id="buton" class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a href="http://localhost:3000/" target="_blank">
+					<button id="buton" class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+				<button id="click" onclick="visible()">
+        			<img id="clickable" src="icons/menu-icon.png"></img>
+        		</button>
+			</div>
+		</div>
+		<div class="bod">
+			<div id="vis">
+		      <div id="ham">
+				<a href="index.html">HOME</a><br>
+				<a href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a href="tutorial_home_html.html">TUTORIALS</a><br>
+				<a href="aboutus_html.html">ABOUT US</a>       
+				<a href="contact_html.html">CONTACT US</a><br>       
+                <a class="opt" href="login_html.html">
+					<button class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a class="opt" href="http://localhost:3000/" target="_blank">
+					<button class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+		      </div>
+		    </div>
+			<div id="login-box">
+				<form id="mobileview" action="https://getform.io/f/f99f2fdf-f849-4658-849f-ac6e799420bf" method="POST" enctype="multipart/form-data">
+					<h2 style="margin-bottom: 0;"> ENROLL AS A COORDINATOR </h2><br>
+					<h6 style="text-align:center;margin: 0px;margin-bottom: 3%;">(You will be given access as coordinator on successfull verification of your details.)</h6>
+					<input type="text" id="fname" name="fname" placeholder="First name">
+					<input type="text" id="lname" name="lname" placeholder="Last name">
+					<input type="text" id="clgname" name="clgname" placeholder="College name">
+					<select>
+						<option>Select your designation</option>
+						<option>Professor</option>
+						<option>Assistant Professor</option>
+						<option>Associate Professor</option>
+						<option>Head Of Department</option>
+						<option>Others</option>
+					</select>
+
+					<input type="text" id="username" name="username" placeholder="Username">
+					<input type="password" name="pwd" placeholder="Password">
+					<input type="password" name="pwd" placeholder="Confirm Password">
+
+					<input type="email" id="email" name="email" placeholder="Email address">
+					<div id="verifying">
+						<button id="verify_btn" >Verify</button>
+						<input type="text" id="otp" name="otp" placeholder="Enter OTP">
+					</div>
+
+					<input type="mobile" id="mobile" name="mobile" placeholder="Mobile number">
+					<div id="verifying">
+						<button id="verify_btn" >Verify</button>
+						<input type="text" id="otp" name="otp" placeholder="Enter OTP">
+					</div><br>
+					<label>Upload your College identy card<br><input type="file" name="Upload" id="idpic" style="border-style: solid; margin-top: 2%;"></label>
+					<br>
+					<h5>We will allow you access on successfull verification of your identity.</h5>
+					<button id="login-btn" >REGISTER</button><br><br>
+					<a class="login-opts" href="login_html.html">Already created an account!</a><br>
+				</form>
+				
+				
+				<form id="pcview"  action="https://getform.io/f/f99f2fdf-f849-4658-849f-ac6e799420bf" method="POST" enctype="multipart/form-data">
+					<h2 style="margin-bottom: 0;"> ENROLL AS A COORDINATOR </h2><br>
+					<h6 style="text-align:center;margin: 0px;margin-bottom: 3%;">(You will be given access as coordinator on successfull verification of your details.)</h6>
+					<div id="pcbox">
+						<input type="text" id="fname" name="fname" placeholder="First name">
+					<input type="text" id="lname" name="lname" placeholder="Last name"><br>
+					<input type="text" id="clgname" name="clgname" placeholder="College name">
+
+					<select>
+						<option>Select your designation</option>
+						<option>Professor</option>
+						<option>Assistant Professor</option>
+						<option>Associate Professor</option>
+						<option>Head Of Department</option>
+						<option>Others</option>
+					</select>
+
+					<input type="text" id="username" name="username" placeholder="Username"><br>
+					<input type="password" name="pwd" placeholder="Password">
+					<input type="password" name="pwd" placeholder="Confirm Password"><br>
+
+					<input type="email" id="email" name="email" placeholder="Email address">&nbsp&nbsp&nbsp
+					
+					<input type="mobile" id="mobile" name="mobile" placeholder="Mobile number">&nbsp&nbsp&nbsp
+					
+					<label>Upload your College identy card<br><input type="file" name="file" id="idpic" style="border-style: solid; margin-top: 2%;"></label>
+					<br>
+					<h5>We will allow you access on successfull verification of your identity.</h5>
+					<button id="login-btn" >REGISTER</button><br>
+					<a class="login-opts" href="login_html.html">Already created an account!</a>
+					</div><br>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="footor-main"> 
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+				<div id="social-icons">
+					<a href="https://www.facebook.com/100090803676433/" target="_blank"><img class="icons" src="icons/facebook-icon.svg"></a>
+					<a href="https://instagram.com/ed2comofficial?igshid=YmMyMTA2M2Y=" target="_blank"><img class="icons" src="icons/instagram-icon.svg"></a>
+					<a href="https://www.twitter.com/ed2comofficial" target="_blank"><img class="icons" src="icons/twitter-icon.svg"></a>
+					<a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSMTtfzgFwzRpvLTCGcMQdDKnJLrKQfPrqxKsrPwNpJQPnCCfHvwJltNGkKnvGCWjfTKkwJK" target="_blank"><img class="icons" src="icons/send-icon.png"></a>
+				</div>
+			</div>
+			<p>Educational Community & Competition System</p>
+			<p><a id="in-p" href="contact_html.html">Contact</a>|&nbsp&nbsp<a id="in-p" href="aboutus_html.html">About</a>|&nbsp&nbsp<a id="in-p" href="faqs_html.html">FAQs</a></p>
+		</div>
+	</div>
+	<script src="signin_js.js"></script>
+</body>
+</html>

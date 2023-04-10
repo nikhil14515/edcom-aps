@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SparX Code Debugging</title>
+	<link rel="icon" href="images/r_logo_blue.png">
+	<link rel="stylesheet" href="contest_indiv_css.css"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar1">
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+			</div>
+			<div id="navbar-options">
+				<a class="nav-opt" href="index.html">HOME</a>
+				<a class="nav-opt" href="contest_home_html.html">CONTESTS</a>
+				<a class="nav-opt" href="tutorial_home_html.html">TUTORIALS</a>
+				<a class="nav-opt" href="aboutus_html.html">ABOUT US</a>
+				<a class="nav-opt" href="contact_html.html">CONTACT US</a>                
+                <a href="login_html.html" style="display: none;">
+					<button  id="buton" class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a href="http://localhost:3000/" target="_blank">
+					<button id="buton" class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+				<button id="click" onclick="visible()">
+        			<img id="clickable" src="icons/menu-icon.png"></img>
+        		</button>
+			</div>
+
+		</div>
+		<div class="bod">
+			<div id="vis">
+		      <div id="ham">
+				<a href="index.html">HOME</a><br>
+				<a class="opt" href="contest_home_html.html">CONTESTS</a>
+				<a class="opt" href="tutorial_home_html.html">TUTORIALS</a>
+				<a href="aboutus_html.html">ABOUT US</a><br>
+				<a  href="contact_html.html">CONTACT US</a><br><br>                
+                <a class="opt" href="login_html.html" style="display: none;">
+					<button  class="signIn-button">ORGANIZER LOG IN</button>&nbsp;
+				</a>
+				<a class="opt" href="http://localhost:3000/" target="_blank">
+					<button class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+		      </div>
+		    </div>
+			<div id="main-container">
+                <div id="container-intro">
+                    <div id="intro-image-div">
+                        <img id="intro-img" src="images/codeDebug.jpg"></img>
+                    </div>
+                    <h3 class="info-head" style=" font-size: 22px;justify-content: center;">SparX - Code Debugging by AVEN</h3>
+                    <h4 id="event-org-name" style="display: flex; font-size: 17px;justify-content: center;">Co-ordinator Name : Tanusri N</h4>
+                    <div id="container-intro-btn">
+						<a href="https://forms.gle/faTCihoLygJUutVS8">
+							<button id="intro-btn">REGISTER</button>
+						</a>
+						<button class="contest-btn-white" onclick="copy(2)" id="copy1">SHARE</button>
+                    </div> 
+                </div>
+                <div id="container-info">
+                    <div class="contest-box">
+                        <h3 class="info-head">DESCRIPTION</h3>
+                        <p class="info-matter">
+							<ul>
+								<li>Code Debugging involves in finding the errors in the given code and make them to be executed.</li>
+								<li>Codes will be given in 3 languages.
+									<ol>
+										<li>2 codes in C language.</li>
+										<li>5 codes in Python language.</li>
+										<li>2 codes in Java language.</li>
+									</ol>
+								</li>
+								<li>A total duration of 100 minutes is given for 3 coding questions.</li>
+							</ul>
+							
+						</p>
+                    </div>
+                    <div class="contest-box">
+                        <h3 class="info-head">ELIGIBILITY</h3>
+                        <p class="info-matter">
+							<ul>
+								<li>All students of 1st and 2nd year students of graduation are eligible.</li>
+							</ul>
+						</p> 
+                    </div>
+                    <div class="contest-box">
+                        <h3 class="info-head">IMPORTANT DATES</h3>
+                        <p class="info-matter">
+							<ul>
+								<li>Last date to register : <b id="event-lst-date">15-05-2023</b></li>
+								<li>Event start date : <b id="event-start-date">27-05-2023</b><br></li>
+								<li>Event end date : <b id="event-end-date">28-05-2023</b></li>
+							</ul>
+						</p>
+                    </div>
+                    <div class="contest-box">
+                        <h3 class="info-head">REWARDS</h3>
+                        <p class="info-matter">
+							<ul>
+								<li>Winner : <b> INR 1,000/-</b></li>
+								<li>Runner up : <b> INR 500/-</b></li>
+								<li>Participation certificate for everyone.</li>
+							</ul>
+						</p>
+                    </div>
+
+                </div>
+            </div>
+		</div>
+		<div class="footer">
+			<div id="footor-main"> 
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+				<div id="social-icons">
+					<a href="https://www.facebook.com/100090803676433/" target="_blank"><img class="icons" src="icons/facebook-icon.svg"></a>
+					<a href="https://instagram.com/ed2comofficial?igshid=YmMyMTA2M2Y=" target="_blank"><img class="icons" src="icons/instagram-icon.svg"></a>
+					<a href="https://www.twitter.com/ed2comofficial" target="_blank"><img class="icons" src="icons/twitter-icon.svg"></a>
+					<a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSMTtfzgFwzRpvLTCGcMQdDKnJLrKQfPrqxKsrPwNpJQPnCCfHvwJltNGkKnvGCWjfTKkwJK" target="_blank"><img class="icons" src="icons/send-icon.png"></a>
+				</div>
+			</div>
+			<p>Educational Community & Competition System</p>
+			<p><a id="in-p" href="contact_html.html">Contact</a>|&nbsp&nbsp<a id="in-p" href="aboutus_html.html">About</a>|&nbsp&nbsp<a id="in-p" href="faqs_html.html">FAQs</a></p>
+		</div>
+	</div>
+	<script src="contest_indiv_js.js"></script>
+</body>
+</html>

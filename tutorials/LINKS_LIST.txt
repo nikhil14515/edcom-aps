@@ -1,0 +1,21 @@
+1  - Python - https://youtu.be/rfscVS0vtbw
+2  - Java - https://youtu.be/grEKMHGYyns
+3  - C - https://youtu.be/ix5jPkxsr7M
+4  - HTML & CSS - https://youtu.be/mU6anWqZJcc
+5  - JavaScript - https://youtu.be/jS4aFq5-91M
+6  - Data Structures - https://youtu.be/RBSGKlAvoiM
+7  - SQL - https://youtu.be/HXV3zeQKqGY
+
+8  - ReactJS - https://youtu.be/4UZrsTqkcW4
+9  - NodeJS - https://youtu.be/gG3pytAY2MY
+10 - AngularJS - https://youtu.be/2OHbjep_WjQ
+11 - Django - https://youtu.be/F5mRW0jo-U4
+12 - ReactJS & Firebase - https://youtu.be/m_u6P5k0vP0
+13 - ML - https://youtu.be/i_LwzRVP7bg
+14 - Data Analysis - https://youtu.be/GPVsHOlRBBI
+15 - Data Science - https://youtu.be/ua-CiDNNj30
+16 - AWS - https://youtu.be/I7m6lPtA42E
+17 - AZURE - https://youtu.be/0bNFkI_0jhc
+18 - Google Cloud - https://youtu.be/vACTtmLWiQY
+19 - LINUX - https://youtu.be/sWbUDq4S6Y8
+20 - DB Design - https://youtu.be/ztHopE5Wnpc

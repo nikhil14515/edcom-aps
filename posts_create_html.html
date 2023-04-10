@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ED-COM CONTEST CREATION</title>
+	<link rel="icon" href="images/r_logo_blue.png">
+	<link rel="stylesheet" href="posts_create_css.css"></link>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar1">
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+			</div>
+			
+			<div id="navbar-options">
+				<a class="nav-opt" href="index.html">HOME</a>
+				<a class="nav-opt" href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a class="nav-opt" href="tutorial_home_html.html">TUTORIALS</a>
+				<a class="nav-opt" href="aboutus_html.html">ABOUT US</a>
+				<a class="nav-opt" href="contact_html.html">CONTACT US</a>                
+				<a href="http://localhost:3000/" target="_blank">
+					<button id="buton" class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+                <a href="login_html.html">
+					<button  id="buton" class="signIn-button" onclick="signOut()">LOG OUT</button>&nbsp;
+				</a>
+				<button id="click" onclick="visible()">
+        			<img id="clickable" src="icons/menu-icon.png"></img>
+        		</button>
+			</div>
+		</div>
+		<div id="side-head" class="w3-container w3-center w3-animate-left"><b>Welcome back!</b></div>
+		<div id="side-head" style="display: none;">Welcome back, <b id="usersname">NIKHIL</b>!</div>
+		<div class="bod">
+			<div id="vis">
+		      <div id="ham">
+				<a href="index.html">HOME</a><br>
+				<a href="https://www.appsheet.com/start/de1eb7a4-f3d8-4d67-a275-11b857ff3a63#appName=ED_COM_CONTESTS-313949129&sort=%5B%5D&table=Sheet1&view=ED_COM__Events">CONTESTS</a>
+				<a href="tutorial_home_html.html">TUTORIALS</a><br>
+				<a href="aboutus_html.html">ABOUT US</a>       
+				<a href="contact_html.html">CONTACT US</a><br>       
+				<a class="opt" href="http://localhost:3000/" target="_blank">
+					<button class="signIn-button">COMMUNITY LOG IN</button>
+
+				</a>
+				<a class="opt" href="login_html.html">
+					<button class="signIn-button" onclick="signOut()">LOG OUT</button>&nbsp;
+				</a>
+		      </div>
+		    </div>
+			<div id="pcbox">
+				<form id="pcview" action="https://sheetdb.io/api/v1/pq7k3ndlk7cza" method="POST" enctype="multipart/form-data">
+					<h2 style="margin-bottom: 0;"> CONTEST CREATIONS </h2><br>
+					<input type="text" name="Username" id="Username" placeholder="Enter your username">
+					<input type="text" name="EventName" id="EventName" placeholder="Enter the event name">
+					<input type="text" name="CoordinateName" id="CoordinateName" placeholder="Enter the coordinate name"><br>
+					<label>Enter event starting date</label><input type="date" name="StartDate" id="StartDate" placeholder="Enter event starting date"><br>
+					<label>Enter event ending date</label><input type="date" name="EndDate" id="EndDate" placeholder="Enter event ending date"><br>
+					<label>Enter last date to apply for the event</label><input type="date" name="LastDate" id="LastDate" placeholder="Enter event ending date"><br>
+					<input type="textarea" name="Description" id="Description" placeholder="Enter the event description">
+					<input type="textarea" name="Eligibility" id="Eligibility" placeholder="Enter the event eligibility">
+					<input type="textarea" name="Rewards" id="Rewards" placeholder="Enter the event rewards">
+					<input type="url" name="ImageURL" id="ImageURL" placeholder="Enter the URL of event image">
+					<input type="url" name="RegURL" id="RegURL" placeholder="Enter the URL of Registration form">
+					<h5 id="msg" style="display: none;text-align: center; color: green;">Contest created successfully!</h5>
+					<button id="login-btn" type="submit" style="width: max-content">POST CONTEST</button><br>
+					</div><br>
+				</form>
+			</div>
+			<div id="login-box">
+				<form id="mobileview" action="https://sheetdb.io/api/v1/pq7k3ndlk7cza" method="POST" enctype="multipart/form-data">
+					<h2 style="margin-bottom: 0;"> CONTEST CREATIONS </h2><br>
+					<input type="text" name="Username" id="Username" placeholder="Enter your username">
+					<input type="text" name="EventName" id="EventName" placeholder="Enter the event name">
+					<input type="text" name="CoordinateName" id="CoordinateName" placeholder="Enter the coordinate name"><br>
+					<label>Enter event starting date</label><input type="date" name="StartDate" id="StartDate" ><br>
+					<label>Enter event ending date</label><input type="date" name="EndDate" id="EndDate"><br>
+					<label>Enter last date to apply for the event</label><input type="date" name="LastDate" id="LastDate" ><br>
+					<input type="date" name="LastDate" id="LastDate" placeholder="Enter last date to apply">
+					<input type="textarea" name="Description" id="Description" placeholder="Enter the event description">
+					<input type="textarea" name="Eligibility" id="Eligibility" placeholder="Enter the event eligibility">
+					<input type="textarea" name="Rewards" id="Rewards" placeholder="Enter the event rewards">
+					<input type="url" name="ImageURL" id="ImageURL" placeholder="Enter the URL of event image">
+					<input type="url" name="RegURL" id="RegURL" placeholder="Enter the URL of Registration form">
+					<h5 id="msg" style="display: none;text-align: center; color: green;">Contest created successfully!</h5>
+					<button id="login-btn" type="submit" style="width: max-content" >POST CONTEST</button><br>
+					</div><br>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div id="footor-main"> 
+				<a href="index.html"><img id="logo" src="images/ed-com_text.png"></a>
+				<div id="social-icons">
+					<a href="https://www.facebook.com/100090803676433/" target="_blank"><img class="icons" src="icons/facebook-icon.svg"></a>
+					<a href="https://instagram.com/ed2comofficial?igshid=YmMyMTA2M2Y=" target="_blank"><img class="icons" src="icons/instagram-icon.svg"></a>
+					<a href="https://www.twitter.com/ed2comofficial" target="_blank"><img class="icons" src="icons/twitter-icon.svg"></a>
+					<a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=GTvVlcSMTtfzgFwzRpvLTCGcMQdDKnJLrKQfPrqxKsrPwNpJQPnCCfHvwJltNGkKnvGCWjfTKkwJK" target="_blank"><img class="icons" src="icons/send-icon.png"></a>
+				</div>
+			</div>
+			<p>Educational Community & Competition System</p>
+			<p><a id="in-p" href="contact_html.html">Contact</a>|&nbsp&nbsp<a id="in-p" href="aboutus_html.html">About</a>|&nbsp&nbsp<a id="in-p" href="faqs_html.html">FAQs</a></p>
+		</div>
+	</div>
+	<script>
+		if($.cookie("username.isAuthenticated") == false)
+    		window.location = "login.html";
+	</script>
+	<script>
+		var form = document.querySelector("form");
+		function magic(){
+			document.getElementById("msg").style.display="none";
+			document.querySelector("form").reset();
+		}
+		form.addEventListener("submit", e => {
+			e.preventDefault();
+			fetch(form.action, {
+				method : "POST",
+				body: new FormData(document.querySelector("form")),
+			}).then(
+				response => response.json()
+			).then((html) => {
+			document.getElementById("msg").style.display = "inline";
+			document.querySelector("form").reset();
+			setTimeout(magic,3500);
+			});
+		});
+	</script>
+	<script src="login_js.js"></script>
+	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+	<script src="posts_create_js.js"></script>
+	
+</body>
+</html>

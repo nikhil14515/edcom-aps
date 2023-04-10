@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+body {
+  background-image: url("images/page_background.png");
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0% 0% 0% 0%;
+}
+h2 {
+  color: #001f54;
+  font-size: 20px;
+  text-align: center;
+}
+h3 {
+  color: #001f54;
+  font-size: 30px;
+  margin: 0 0 0 2%;
+  padding-top: 2%;
+}
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+input {
+  background-color: #eee;
+  border-style: solid;
+  border-color: #001f54;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+form {
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  border-style: solid;
+  border-color: #001f54;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px 0 15px;
+}
+.navbar {
+  background-color: #001f54;
+  display: flex;
+  min-width: 320px;
+  height: auto;
+  padding: 1% 1% 1% 1%;
+}
+#navbar1 {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+#clickable {
+  background-color: #001f54;
+  border-style: solid;
+  border-color: #001f54;
+  width: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.bod {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+}
+#login-btn {
+  align-items: center;
+  background-color: #001f54;
+  border-style: 1px solid;
+  border-color: white;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  width: 150px;
+  height: 50px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+#login-btn:hover,
+#login-btn:focus {
+  background-color: white;
+  color: #001f54;
+  border-color: #001f54;
+}
+
+#login-btn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+#login-btn:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background-color: #001f54;
+  height: 100%;
+  padding: 5px 0 2px 10px;
+  min-width: 320px;
+}
+p,
+#in-p {
+  color: white;
+  padding-left: 0.5rem;
+}
+a:hover {
+  color: #ffffff;
+}
+.icons {
+  width: 2.2rem;
+}
+#footor-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#social-icons {
+  width: 50%;
+}
+#navbar-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  width: 80%;
+}
+#click {
+  background-color: #001f54;
+  border-color: #001f54;
+  border-style: none;
+}
+#vis {
+  display: flex;
+  position: fixed;
+  top: 86px;
+  right: 0.05%;
+  background-color: white;
+}
+ol {
+  text-decoration: none;
+}
+#ham {
+  display: none;
+  border-style: solid;
+  border-color: #001f54;
+  width: 130px;
+  height: auto;
+  padding: 8px 2px 2px 8px;
+}
+@media only screen and (min-width: 750px) {
+  #enroll {
+    font-size: medium;
+    display: flex;
+    align-content: center;
+    font-size: 2rem;
+  }
+  #click,
+  #ham,
+  #vis {
+    display: none;
+  }
+
+  .nav-opt {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 2%;
+  }
+  a:hover {
+    color: #ff7d00;
+  }
+  .signIn-button {
+    align-items: center;
+    background-color: white;
+    border-style: 1px solid;
+    border-color: white;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #001f54;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+      "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+      "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 300px;
+    min-height: 30px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+  }
+
+  .signIn-button:hover,
+  .signIn-button:focus {
+    background-color: #001f54;
+    color: #ffffff;
+  }
+
+  .signIn-button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  .signIn-button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .home-bar-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 2%;
+  }
+  .bar-img {
+    width: 100%;
+    height: 100%;
+  }
+  .home-bar-info {
+    margin-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    background-color: ghostwhite;
+  }
+  #home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .home-bar {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    background-color: white;
+    border-style: solid;
+  }
+  .home-bar-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20%;
+  }
+  #home-bar {
+    flex-direction: row;
+    border-style: solid;
+    border-color: #001f54;
+  }
+
+  .view-button {
+    align-items: center;
+    background-color: #001f54;
+    border-style: 1px solid;
+    border-color: #001f54;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+      "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+      "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 25px;
+    max-width: 300px;
+    min-height: 35px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+
+  .view-button:hover,
+  .view-button:focus {
+    background-color: white;
+    color: #001f54;
+  }
+
+  .view-button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  .view-button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+  }
+  ul {
+    color: #001f54;
+    font-size: 20px;
+    padding-left: 20%;
+  }
+  .moto {
+    font-size: 30px;
+  }
+}
+a {
+  color: #001f54;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 2%;
+}
+
+a:hover {
+  color: #ff7d00;
+}
+
+@media only screen and (max-width: 750px) {
+  #enroll {
+    font-size: medium;
+    display: flex;
+    align-content: center;
+    font-size: 1rem;
+  }
+  .nav-opt,
+  #buton,
+  .signIn-button {
+    display: none;
+  }
+
+  #b1 {
+    display: none;
+  }
+  a {
+    color: #001f54;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 2%;
+  }
+  a:hover {
+    color: #ff7d00;
+  }
+  .signIn-button {
+    align-items: center;
+    background-color: #001f54;
+    border-style: 1px solid;
+    border-color: #001f54;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+      "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+      "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 200px;
+    min-height: 30px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+
+  .signIn-button:hover,
+  .signIn-button:focus {
+    background-color: white;
+    color: #001f54;
+  }
+
+  .signIn-button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  .signIn-button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .home-bar-img {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* margin: 1%; */
+  }
+  .bar-img {
+    width: 98%;
+    height: 100%;
+    margin: 1%;
+  }
+  .home-bar-info {
+    /* margin-left: 2%; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    background-color: ghostwhite;
+  }
+  #home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .home-bar {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    background-color: white;
+    border-style: solid;
+  }
+  .home-bar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #home-bar {
+    flex-direction: column;
+    border-style: solid;
+    border-color: #001f54;
+  }
+
+  .view-button {
+    align-items: center;
+    background-color: #001f54;
+    border-style: 1px solid;
+    border-color: #001f54;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+      "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+      "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 25px;
+    max-width: 300px;
+    min-height: 35px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+
+  .view-button:hover,
+  .view-button:focus {
+    background-color: white;
+    color: #001f54;
+  }
+
+  .view-button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  .view-button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+  }
+  ul {
+    color: #001f54;
+    font-size: 20px;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .moto {
+    font-size: 20px;
+  }
+  #enroll {
+    font-size: medium;
+    display: flex;
+    align-content: center;
+    font-size: 1rem;
+  }
+}
+
+#moto-box {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  border-style: solid;
+  border-color: #001f54;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  opacity: 90%;
+}
+
+.moto {
+  display: flex;
+  margin-top: 2%;
+  border-color: #001f54;
+  border-style: solid;
+  width: 80%;
+  align-items: center;
+}
+
+.moto-num {
+  background-color: #001f54;
+  color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.moto-name {
+  color: #001f54;
+  background-color: white;
+  padding-left: 2%;
+}
+#enroll-button {
+  align-items: center;
+  background-color: #001f54;
+  border-style: 1px solid;
+  border-color: #001f54;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 25px;
+  width: max-content;
+  min-height: 45px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+#enroll-button:hover,
+#enroll-button:focus {
+  background-color: white;
+  color: #001f54;
+}
+
+#enroll-button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+#enroll-button:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
