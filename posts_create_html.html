@@ -111,6 +111,11 @@
     		window.location = "login.html";
 	</script>
 	<script>
+		function preventBack(){window.history.forward()};
+		setTimeout("preventBack()",0);
+		window.onunload=function(){null;}
+	</script>
+	<script>
 		var form = document.querySelector("form");
 		function magic(){
 			document.getElementById("msg").style.display="none";

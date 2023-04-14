@@ -46,6 +46,7 @@
 			<div id="login-box">
 				<form>
 					<h2 style="margin-bottom: 0;"> ORGANIZER LOG IN </h2><br>
+					<h6 style="margin: 0px;margin-bottom: 3%;">(Under-development)</h6>
 					<input type="email" id="email" name="email" placeholder="Email address">
 					<input type="password" id="password" placeholder="Password" style="margin-bottom: 0;"><br>
 					<button id="login-btn" onclick="signIn()" >LOG IN</button><br>
@@ -70,6 +71,11 @@
 	</div>
 	<script>
 		sessionStorage.setItem('hasVisitedFirstPage', 'true');
+	</script>
+	<script>
+		function preventBack(){window.history.forward()};
+		setTimeout("preventBack()",0);
+		window.onunload=function(){null;}
 	</script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
