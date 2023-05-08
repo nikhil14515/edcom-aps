@@ -1,7 +1,7 @@
 
 
-<b>EDUCATIONAL COMPETITION & COMMUNITY SYSTEM</b>
-Website URL - https://edcom-official-aps.netlify.app/
+<b>EDUCATIONAL COMPETITION & COMMUNITY SYSTEM</b><br>
+Website URL - https://edcom-official-aps.netlify.app/ <br>
 a) Decription :-
 > Educational systems are growing digitally through LMS's and proper platform is 
 missing for the college/school in order to integrate it only for their need. Major 
